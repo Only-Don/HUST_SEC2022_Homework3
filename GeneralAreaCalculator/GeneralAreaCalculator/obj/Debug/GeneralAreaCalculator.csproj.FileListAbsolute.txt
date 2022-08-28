@@ -51,3 +51,13 @@ E:\软件工程训练营\面积计算器\GeneralAreaCalculator\obj\Debug\General
 E:\软件工程训练营\面积计算器\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.CoreCompileInputs.cache
 E:\软件工程训练营\面积计算器\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.exe
 E:\软件工程训练营\面积计算器\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.pdb
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\bin\Debug\GeneralAreaCalculator.exe.config
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\bin\Debug\GeneralAreaCalculator.exe
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\bin\Debug\GeneralAreaCalculator.pdb
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.AssemblyReference.cache
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.Form1.resources
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.Properties.Resources.resources
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.GenerateResource.cache
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.CoreCompileInputs.cache
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.exe
+D:\VS程序\第三次作业\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.pdb
