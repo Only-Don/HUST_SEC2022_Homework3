@@ -88,17 +88,29 @@ namespace GeneralAreaCalculator
             radioButton3.Visible = false;
             radioButton4.Visible = false;
         }
-
+        /// <summary>
+        /// 本构造函数用于清除左侧的厘米/英寸选择框的背景颜色，以便更好的融入窗体
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void groupBox1_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.Clear(this.BackColor);
         }
-
+        /// <summary>
+        /// 本构造函数用于清除右侧的厘米/英寸选择框的背景颜色，以便更好的融入窗体
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void groupBox2_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.Clear(this.BackColor);
         }
-
+        /// <summary>
+        /// 本构造函数用于在点击计算按钮的时候根据图形类别和数据输出计算结果，如结果出错则进行提示
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             int graph = comboBox1.SelectedIndex;
@@ -135,27 +147,35 @@ namespace GeneralAreaCalculator
                 }
             }
         }
-
+        /// <summary>
+        /// 本构造函数用于在点击显示历史记录按钮的时候调用<paramref name="ShowRecord"/>方法，加载历史记录
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LoadHistory_Click(object sender, EventArgs e)
         {
             record.ShowRecord(this.textBox3);
         }
-
+        /// <summary>
+        /// 本构造函数用于在点击清除历史记录按钮的时候调用<paramref name="ClearRecord"/>方法，清除历史记录，并将两个输入框的当前数据清除
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void clearButton_Click(object sender, EventArgs e)
         {
             record.ClearRecord(this.textBox3);
             textBox1.Text = "";
             textBox2.Text = "";
         }
-
+        /// <summary>
+        /// 本构造函数用于在退出窗体的时候调用<paramref name="SaveRecord"/>方法，保存历史记录
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             record.SaveRecord();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
