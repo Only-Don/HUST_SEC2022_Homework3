@@ -11,15 +11,25 @@ using System.Windows.Forms;
 
 namespace GeneralAreaCalculator
 {
+    /// <summary>
+    /// 用于控制计算器的窗体，继承了<paramref name="Form"></paramref>
+    /// </summary>
     public partial class Form1 : Form
     {
         HistoryRecord record = new HistoryRecord();
+        /// <summary>
+        /// 本构造函数对窗体进行实例化，并且显示窗体
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
             Graphic();
             SqaureLable.Visible = true;
         }
+
+        /// <summary>
+        /// 本构造函数用于创建图形选框的选项，并且给出<paramref name="正方形"></paramref>作为默认值
+        /// </summary>
         public void Graphic()
         {
             comboBox1.Items.Add("正方形");
@@ -28,6 +38,11 @@ namespace GeneralAreaCalculator
             comboBox1.Items.Add("三角形");
             comboBox1.SelectedIndex = comboBox1.Items.IndexOf("正方形");
         }
+        /// <summary>
+        /// 本构造函数用于根据选框选择图形的类别，显示相应图形的数据输入框和输入提示
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = comboBox1.SelectedIndex;
@@ -58,7 +73,9 @@ namespace GeneralAreaCalculator
                 radioButton4.Visible = true;
             }
         }
-
+        /// <summary>
+        /// 这个函数用于切换图形类别时，清除之前所显示的输入框和输入提示
+        /// </summary>
         public void clearAll()
         {
             textBox2.Visible = false;
@@ -134,6 +151,11 @@ namespace GeneralAreaCalculator
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             record.SaveRecord();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -73,7 +73,7 @@ namespace GeneralAreaCalculator
             this.comboBox1.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(649, 172);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(353, 38);
             this.comboBox1.TabIndex = 1;
@@ -133,7 +133,7 @@ namespace GeneralAreaCalculator
             // 
             this.textBox2.Font = new System.Drawing.Font("宋体", 18F);
             this.textBox2.Location = new System.Drawing.Point(365, 169);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(244, 42);
             this.textBox2.TabIndex = 9;
@@ -182,7 +182,7 @@ namespace GeneralAreaCalculator
             // 
             this.textBox3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox3.Location = new System.Drawing.Point(84, 290);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -210,7 +210,7 @@ namespace GeneralAreaCalculator
             this.LoadHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoadHistory.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.LoadHistory.Location = new System.Drawing.Point(649, 290);
-            this.LoadHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadHistory.Margin = new System.Windows.Forms.Padding(4);
             this.LoadHistory.Name = "LoadHistory";
             this.LoadHistory.Size = new System.Drawing.Size(160, 88);
             this.LoadHistory.TabIndex = 18;
@@ -233,7 +233,7 @@ namespace GeneralAreaCalculator
             // 
             this.textBox1.Font = new System.Drawing.Font("宋体", 18F);
             this.textBox1.Location = new System.Drawing.Point(84, 169);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(223, 42);
             this.textBox1.TabIndex = 22;
@@ -244,7 +244,7 @@ namespace GeneralAreaCalculator
             this.radioButton1.Checked = true;
             this.radioButton1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton1.Location = new System.Drawing.Point(3, 24);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(47, 22);
             this.radioButton1.TabIndex = 23;
@@ -257,7 +257,7 @@ namespace GeneralAreaCalculator
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton2.Location = new System.Drawing.Point(63, 25);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(65, 22);
             this.radioButton2.TabIndex = 24;
@@ -269,7 +269,7 @@ namespace GeneralAreaCalculator
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton4.Location = new System.Drawing.Point(67, 25);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(65, 22);
             this.radioButton4.TabIndex = 28;
@@ -282,7 +282,7 @@ namespace GeneralAreaCalculator
             this.radioButton3.Checked = true;
             this.radioButton3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton3.Location = new System.Drawing.Point(7, 25);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(47, 22);
             this.radioButton3.TabIndex = 27;
@@ -295,9 +295,9 @@ namespace GeneralAreaCalculator
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Location = new System.Drawing.Point(176, 101);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(132, 68);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
@@ -308,9 +308,9 @@ namespace GeneralAreaCalculator
             this.groupBox2.Controls.Add(this.radioButton4);
             this.groupBox2.Controls.Add(this.radioButton3);
             this.groupBox2.Location = new System.Drawing.Point(471, 101);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(140, 68);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
@@ -324,7 +324,7 @@ namespace GeneralAreaCalculator
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Font = new System.Drawing.Font("宋体", 14.25F);
             this.clearButton.Location = new System.Drawing.Point(844, 289);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(160, 88);
             this.clearButton.TabIndex = 31;
@@ -373,10 +373,11 @@ namespace GeneralAreaCalculator
             this.Controls.Add(this.RectangleLengthLable);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
