@@ -22,7 +22,13 @@ namespace GeneralAreaCalculator
     /// </summary>
     public class Area
     {
+        /// <summary>
+        /// 厘米为单位的面积
+        /// </summary>
         public double cmArea { get; set; }
+        /// <summary>
+        /// 英尺为单位的面积
+        /// </summary>
         public double inArea { get; set; }
 
         /// <summary>

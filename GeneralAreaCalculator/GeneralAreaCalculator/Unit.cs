@@ -13,9 +13,21 @@ namespace GeneralAreaCalculator
     /// </summary>
     public class Unit
     {
+        /// <summary>
+        /// 左侧输入框以厘米为单位的数据。
+        /// </summary>
         public Centimeter centimeterLeft { get; set; }
+        /// <summary>
+        /// 右侧输入框以厘米为单位的数据。
+        /// </summary>
         public Centimeter centimeterRight { get; set; }
+        /// <summary>
+        /// 左侧输入框以英寸为单位的数据。
+        /// </summary>
         public Inch inchLeft { get; set; }
+        /// <summary>
+        /// 右侧输入框以英寸为单位的数据。
+        /// </summary>
         public Inch inchRight { get; set; }
 
         /// <summary>
@@ -61,6 +73,9 @@ namespace GeneralAreaCalculator
     /// </summary>
     public class Centimeter
     {
+        /// <summary>
+        /// 厘米属性，代表以厘米为单位的数据。
+        /// </summary>
         public double centimeter { get; set; }
         /// <summary>
         /// <c>Centimeter</c>构造方法通过<paramref name="judge"/>判断传入数据<paramref name="data"/>的单位，并将其转换为以厘米为单位的数据。
@@ -87,6 +102,9 @@ namespace GeneralAreaCalculator
     /// </summary>
     public class Inch
     {
+        /// <summary>
+        /// 英寸属性，以英寸为单位的数据。
+        /// </summary>
         public double inch { get; set; }
         /// <summary>
         /// <c>Inch</c>构造方法通过<paramref name="judge"/>判断传入数据<paramref name="data"/>的单位，并将其转换为以英寸为单位的数据。

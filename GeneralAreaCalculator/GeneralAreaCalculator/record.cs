@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace Record
 {
+    /// <summary>
+    /// 记录历史操作
+    /// </summary>
     public class HistoryRecord
     {
         /// <summary>

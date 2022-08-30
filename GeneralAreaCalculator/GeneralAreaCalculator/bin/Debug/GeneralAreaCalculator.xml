@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeneralAreaCalculator</name>
+    </assembly>
+    <members>
+        <member name="T:GeneralAreaCalculator.Area">
+             <summary>
+             the main <c>Area</c>
+             Calculate Area
+             <list type="bullet">
+             <item>
+             <term>Area</term>
+             <description>接收传递的参数，进行正方形和圆形的面积计算</description>
+            </item>
+            <item>
+            <term>Area</term>
+            <description>接收传递的参数，进行长方形和三角形的面积</description>
+             </item>
+             </list>
+             </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Area.cmArea">
+            <summary>
+            厘米为单位的面积
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Area.inArea">
+            <summary>
+            英尺为单位的面积
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Area.#ctor(System.Double,System.Double,System.Int32)">
+            <summary>
+            接收正方形和圆形的数据，分别是<paramref name="cmLeft"/>和<paramref name="inLeft"/>，另外，还有识别计算图形的编号<paramref name="Gragh"/>
+            </summary>
+            <param name="cmLeft">单位为厘米时的数据</param>
+            <param name="inLeft">单位为英尺时的数据</param>
+            <param name="Gragh">识别正方形(<paramref name="Gragh"/>=0)和圆形(<paramref name="Gragh"/>=1)的编号</param>
+        </member>
+        <member name="M:GeneralAreaCalculator.Area.#ctor(System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            接收长方形和三角形的两组数据（厘米英尺），分别是厘米的<paramref name="cmLeft"/>和<paramref name="cmRight"/>与英尺的<paramref name="inLeft"/>和<paramref name="inRight"/>，还有识别计算图形的编号<paramref name="Gragh"/>
+            </summary>
+            <param name="cmLeft">单位为厘米时左边的数据</param>
+            <param name="inLeft">单位为厘米时左边的数据</param>
+            <param name="cmRight">单位为厘米时左边的数据</param>
+            <param name="inRight">单位为厘米时左边的数据</param>
+            <param name="Gragh">识别长方形（<paramref name="Gragh"/>=2）和三角形（<paramref name="Gragh"/>=3）的参数</param>
+        </member>
+        <member name="T:GeneralAreaCalculator.Form1">
+            <summary>
+            用于控制计算器的窗体，继承了Form
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.#ctor">
+            <summary>
+            本构造函数对窗体进行实例化，并且显示窗体
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.Graphic">
+            <summary>
+            本构造函数用于创建图形选框的选项，并且给出正方形作为默认值
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.comboBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            本构造函数用于根据选框选择图形的类别，显示相应图形的数据输入框和输入提示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.clearAll">
+            <summary>
+            这个函数用于切换图形类别时，清除之前所显示的输入框和输入提示
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.groupBox1_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            本构造函数用于清除左侧的厘米/英寸选择框的背景颜色，以便更好的融入窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.groupBox2_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            本构造函数用于清除右侧的厘米/英寸选择框的背景颜色，以便更好的融入窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            本构造函数用于在点击计算按钮的时候根据图形类别和数据输出计算结果，如结果出错则进行提示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.LoadHistory_Click(System.Object,System.EventArgs)">
+            <summary>
+            本构造函数用于在点击显示历史记录按钮的时候调用ShowRecord方法，加载历史记录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.clearButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            本构造函数用于在点击清除历史记录按钮的时候调用ClearRecord方法，清除历史记录，并将两个输入框的当前数据清除
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.Form1_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            本构造函数用于在退出窗体的时候调用SaveRecord方法，保存历史记录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:GeneralAreaCalculator.Form1.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:GeneralAreaCalculator.Form1.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="T:GeneralAreaCalculator.Unit">
+            <summary>
+            <c>Unit</c>类用于转换cm和inch两种单位，每个<c>Unit</c>类的实例有四个属性，
+            分别是<c>Centimeter</c>类的两个实例和<c>Inch</c>类的两个实例，用于储存用户输入的数据，
+            并将其转换为厘米单位。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Unit.centimeterLeft">
+            <summary>
+            左侧输入框以厘米为单位的数据。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Unit.centimeterRight">
+            <summary>
+            右侧输入框以厘米为单位的数据。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Unit.inchLeft">
+            <summary>
+            左侧输入框以英寸为单位的数据。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Unit.inchRight">
+            <summary>
+            右侧输入框以英寸为单位的数据。
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Unit.#ctor(System.Double,System.Double,System.Boolean,System.Boolean)">
+            <summary>
+            本构造函数用于对<c>Unit</c>类中的四个属性进行构造，用于构造长方形和三角形的<c>Unit</c>实例，
+            传入的<paramref name="dataLeft"/>和<paramref name="dataRight"/>参数为具体的用于转换的数据，
+            而传入的<paramref name="judgeLeft"/>和<paramref name="judgeRight"/>用于判断传入的数据是厘米还是英寸。
+            </summary>
+            <param name="dataLeft">左侧文本框输入的数据。</param>
+            <param name="dataRight">右侧文本框输入的数据。</param>
+            <param name="judgeLeft">判断左侧文本框输入的数据的类型，true为厘米，false为英寸。</param>
+            <param name="judgeRight">判断右侧文本框输入的数据的类型，true为厘米，false为英寸。</param>
+            <example>
+            当在GUI面板上用户选择的图形类型为长方形或三角形，
+            左侧文本框输入的数据为15厘米，右侧文本框输入的数据为20英寸，
+            则创造<c>Unit</c>类时的代码如下所示:
+            <code>
+            Unit unit = new Unit(15, 20, true, false);
+            </code>
+            </example>
+        </member>
+        <member name="M:GeneralAreaCalculator.Unit.#ctor(System.Double,System.Boolean)">
+            <summary>
+            本构造函数是对具有四个参数的构造函数的重构，用于对正方形和圆形构造<c>Unit</c>实例，
+            传入的<paramref name="data"/>和<paramref name="judge"/>的功能与<c>Unit(double dataLeft, double dataRight, bool judgeLeft, bool judgeRight)</c>一致。
+            </summary>
+            <param name="data">文本框中输入的数据</param>
+            <param name="judge"></param>
+        </member>
+        <member name="T:GeneralAreaCalculator.Centimeter">
+            <summary>
+            <c>Centimeter</c>类用于存储一个具有以厘米为单位的数据centimeter的类，当构造Centimeter实例的时候，程序将自动判断并将输入的数据依单位转换为厘米格式。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Centimeter.centimeter">
+            <summary>
+            厘米属性，代表以厘米为单位的数据。
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Centimeter.#ctor(System.Double,System.Boolean)">
+            <summary>
+            <c>Centimeter</c>构造方法通过<paramref name="judge"/>判断传入数据<paramref name="data"/>的单位，并将其转换为以厘米为单位的数据。
+            </summary>
+            <param name="data">传入的文本框数据。</param>
+            <param name="judge">对传入的数据的单位进行判断，true为厘米，false为英寸。</param>
+            <example>
+            当输入的数为12，单位为英寸时，代码如下所示：
+            <code>
+            Centimeter centimeter = new Centimeter(12, false);
+            </code>
+            此时centimeter实例中的属性centimeter = 12 * 2.54。
+            </example>
+        </member>
+        <member name="T:GeneralAreaCalculator.Inch">
+            <summary>
+            <c>Inch</c>类用于存储一个具有以英寸为单位的数据inch的类，当构造Inch实例的时候，程序将自动判断并将输入的数据依单位转换为英寸格式。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Inch.inch">
+            <summary>
+            英寸属性，以英寸为单位的数据。
+            </summary>
+        </member>
+        <member name="M:GeneralAreaCalculator.Inch.#ctor(System.Double,System.Boolean)">
+            <summary>
+            <c>Inch</c>构造方法通过<paramref name="judge"/>判断传入数据<paramref name="data"/>的单位，并将其转换为以英寸为单位的数据。
+            </summary>
+            <param name="data">传入的文本框数据。</param>
+            <param name="judge">对传入的数据的单位进行判断，true为厘米，false为英寸。</param>
+            <example>
+            当输入的数为12，单位为英寸时，代码如下所示：
+            <code>
+            Inch inch = new Inch(12, false);
+            </code>
+            此时inch实例中的属性inch = 12。
+            </example>
+        </member>
+        <member name="T:GeneralAreaCalculator.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性，对
+              使用此强类型资源类的所有资源查找执行重写。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Properties.Resources.按钮">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Properties.Resources.按钮1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Properties.Resources.新按钮">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Properties.Resources.未标题_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:GeneralAreaCalculator.Properties.Resources.未标题_11">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="T:Record.HistoryRecord">
+            <summary>
+            记录历史操作
+            </summary>
+        </member>
+        <member name="P:Record.HistoryRecord.records">
+            <summary>
+            记录临时历史记录
+            </summary>
+        </member>
+        <member name="M:Record.HistoryRecord.GetRecord(System.String)">
+            <summary>
+            将输出加入临时历史记录中
+            </summary>
+            <param name="output"></param>
+        </member>
+        <member name="M:Record.HistoryRecord.SaveRecord">
+            <summary>
+            将临时历史记录存入文件，并删除临时历史记录
+            </summary>
+        </member>
+        <member name="M:Record.HistoryRecord.ShowRecord(System.Windows.Forms.TextBox)">
+            <summary>
+            将文件中历史记录存入临时历史记录，在文本框中显示，并删除文件中历史记录
+            </summary>
+            <param name="recordTextBox">显示历史记录的文本框</param>
+        </member>
+        <member name="M:Record.HistoryRecord.ClearRecord(System.Windows.Forms.TextBox)">
+            <summary>
+            清除临时，文件中的历史记录与文本框中文字
+            </summary>
+            <param name="recordTextBox">显示历史记录的文本框</param>
+        </member>
+    </members>
+</doc>

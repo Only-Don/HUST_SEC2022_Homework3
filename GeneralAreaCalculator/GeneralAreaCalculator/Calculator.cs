@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace GeneralAreaCalculator
 {
     /// <summary>
-    /// 用于控制计算器的窗体，继承了<paramref name="Form"></paramref>
+    /// 用于控制计算器的窗体，继承了Form
     /// </summary>
     public partial class Form1 : Form
     {
@@ -28,7 +28,7 @@ namespace GeneralAreaCalculator
         }
 
         /// <summary>
-        /// 本构造函数用于创建图形选框的选项，并且给出<paramref name="正方形"></paramref>作为默认值
+        /// 本构造函数用于创建图形选框的选项，并且给出正方形作为默认值
         /// </summary>
         public void Graphic()
         {
@@ -148,7 +148,7 @@ namespace GeneralAreaCalculator
             }
         }
         /// <summary>
-        /// 本构造函数用于在点击显示历史记录按钮的时候调用<paramref name="ShowRecord"/>方法，加载历史记录
+        /// 本构造函数用于在点击显示历史记录按钮的时候调用ShowRecord方法，加载历史记录
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -157,7 +157,7 @@ namespace GeneralAreaCalculator
             record.ShowRecord(this.textBox3);
         }
         /// <summary>
-        /// 本构造函数用于在点击清除历史记录按钮的时候调用<paramref name="ClearRecord"/>方法，清除历史记录，并将两个输入框的当前数据清除
+        /// 本构造函数用于在点击清除历史记录按钮的时候调用ClearRecord方法，清除历史记录，并将两个输入框的当前数据清除
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -168,7 +168,7 @@ namespace GeneralAreaCalculator
             textBox2.Text = "";
         }
         /// <summary>
-        /// 本构造函数用于在退出窗体的时候调用<paramref name="SaveRecord"/>方法，保存历史记录
+        /// 本构造函数用于在退出窗体的时候调用SaveRecord方法，保存历史记录
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
