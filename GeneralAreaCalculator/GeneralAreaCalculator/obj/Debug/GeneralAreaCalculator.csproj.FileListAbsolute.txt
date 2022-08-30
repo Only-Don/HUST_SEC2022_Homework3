@@ -72,3 +72,14 @@ C:\Users\64083\Desktop\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaC
 C:\Users\64083\Desktop\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.CoreCompileInputs.cache
 C:\Users\64083\Desktop\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.exe
 C:\Users\64083\Desktop\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.pdb
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.AssemblyReference.cache
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.SuggestedBindingRedirects.cache
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.Form1.resources
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.Properties.Resources.resources
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.GenerateResource.cache
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.csproj.CoreCompileInputs.cache
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.exe
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\obj\Debug\GeneralAreaCalculator.pdb
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\bin\Debug\GeneralAreaCalculator.exe.config
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\bin\Debug\GeneralAreaCalculator.exe
+D:\桌面\第三次作业\HUST_SEC2022_Homework3\GeneralAreaCalculator\GeneralAreaCalculator\bin\Debug\GeneralAreaCalculator.pdb

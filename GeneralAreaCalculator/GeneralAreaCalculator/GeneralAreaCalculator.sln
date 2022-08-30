@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralAreaCalculatorTestsF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralAreaCalculatorTests2ForRecord", "..\GeneralAreaCalculatorTests2\GeneralAreaCalculatorTests2ForRecord.csproj", "{8C0F4FBD-4A8A-41CA-A4F1-02CF1D909531}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralAreaCalculatorTests", "..\GeneralAreaCalculatorTests\GeneralAreaCalculatorTests.csproj", "{2124CF35-ABF7-40B8-885A-A8FB970DF1B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8C0F4FBD-4A8A-41CA-A4F1-02CF1D909531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C0F4FBD-4A8A-41CA-A4F1-02CF1D909531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C0F4FBD-4A8A-41CA-A4F1-02CF1D909531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2124CF35-ABF7-40B8-885A-A8FB970DF1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2124CF35-ABF7-40B8-885A-A8FB970DF1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2124CF35-ABF7-40B8-885A-A8FB970DF1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2124CF35-ABF7-40B8-885A-A8FB970DF1B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
